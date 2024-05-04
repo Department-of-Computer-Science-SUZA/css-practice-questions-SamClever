@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My CSS Web site</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="topnav" id="dropdwnClick">
+            <li><a href="index.html">personal</a></li>
+           
+            <li><a href="nterests_and_hobbies.html">interests</a></li>
+            <li><a href="friends.html">friends</a></li>
+            <li class="dropdwnIcon"> <a href="javascript:void(0);" onclick="dropdwnMenu()">&#9776;</a></li>
+            
+        </ul>
+    </nav>
+    <div class="container" >
+        <div class="row">
+            <div class="col-12 ">
+                <h1> MyFriends</h1>
+  <hr>
+  <h2>My Friends:</h2>
+  <ul>
+    <li>Othman Muhajr Ali</li>
+    <li>FMasoud Hamad Mmanga</li>
+    <li>Akram ALi Omar</li>
+  </ul>
+  <script>
+    function dropdwnMenu() {
+        var x = document.getElementById("dropdwnClick")
+        if (x.className === "topnav") {
+            x.className += " responsive";
+            // change topnav to topnav.responseive
+        }
+        else {
+            x.className = "topnav";
+        }
+    }
+</script>   
+</body>
+
+</html>
